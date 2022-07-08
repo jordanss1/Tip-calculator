@@ -47,9 +47,9 @@ document.querySelector(".section2").addEventListener("mouseover", e => {
 document.getElementById("checkboxNoLabel").addEventListener("change", e => {
 	const sectionBelowCheckbox = document.getElementsByClassName("display-onclick")[0];
 
-	if (document.getElementById("checkboxNoLabel").checked === true) {
+	if (e.target.checked === true) {
 		sectionBelowCheckbox.setAttribute("style", "opacity: 1; transition: 2s ease-out;");	
-	} else if (document.getElementById("checkboxNoLabel").checked === false) {
+	} else {
 			sectionBelowCheckbox.setAttribute("style", "opacity: 0; transition: 2s ease-out;");
 	};
 
